@@ -1,0 +1,79 @@
+
+:root {
+    --primaryBorder: rgb(38, 84, 154);
+    --secondaryBorder: rgb(136, 136, 228);
+    --bg: rgb(182, 182, 249);
+}
+
+body {
+    background-color: var(--bg);
+    padding: 0px;
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(99, 99, 244);
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--primaryBorder)
+}
+
+.headerSection {
+    font-size: 30px;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    border-right-width: 1px;
+    border-right-style: dotted;
+    border-right-color: var(--secondaryBorder);
+
+    border-left-width: 1px;
+    border-left-style: dotted;
+    border-left-color: var(--secondaryBorder);
+}
+
+
+.section {
+    background-color: rgb(188, 188, 245);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 80%;
+
+    padding-right: 30px;
+    padding-left: 30px;
+
+    border: 5px solid var(--primaryBorder);
+    border-radius: 30px;
+}
+
+
+.footer {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(45, 45, 45);
+
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(99, 99, 244);
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: rgb(38, 84, 154)
+}

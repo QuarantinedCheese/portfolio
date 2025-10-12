@@ -17,7 +17,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
 
-    background-image: url("/Web-Development/Portfolio/images/Houseboat\ night.png");
+    background-image: url(""/images/Houseboat\ night.png"");
     background-size: cover;
     background-attachment: fixed;
 }

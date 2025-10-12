@@ -1,8 +1,13 @@
 
 :root {
-    --primaryBorder: rgb(38, 84, 154);
-    --secondaryBorder: rgb(136, 136, 228);
+    --primaryBorder: rgb(147, 188, 250);
+    --secondaryBorder: rgb(118, 118, 235);
+
     --bg: rgb(182, 182, 249);
+    --secondbg: rgb(40, 40, 134);
+    --secondbgtrans: rgba(40, 40, 134, 0.2);
+
+    --maintext: rgb(119, 140, 160);
 }
 
 body {
@@ -11,15 +16,21 @@ body {
     margin: 0px;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
+
+    background-image: url("/Web-Development/Portfolio/images/Houseboat\ night.png");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-
-
 .header {
+    position: fixed;
+    top: 0;
+
+    color: var(--maintext);
     display: flex;
     justify-content: center;
 
-    background-color: rgb(99, 99, 244);
+    background-color: var(--secondbg);
     width: 100%;
     margin: auto;
     padding: 15px;
@@ -44,14 +55,21 @@ body {
     border-left-color: var(--secondaryBorder);
 }
 
+.headerSection:hover {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 
 .section {
-    background-color: rgb(188, 188, 245);
+    background-color: var(--secondbgtrans);
+    color: var(--maintext);
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
-    width: 80%;
+    margin-top: 6%;
+    margin-bottom: 20%;
+    width: 60%;
 
     padding-right: 30px;
     padding-left: 30px;
@@ -64,16 +82,13 @@ body {
 .footer {
     text-align: center;
     font-size: 15px;
-    color: rgb(45, 45, 45);
+    color: rgb(38, 76, 166);
 
     position: fixed;
     bottom: 0;
-    background-color: rgb(99, 99, 244);
     width: 100%;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
 
-    border-top-width: 2px;
-    border-top-style: solid;
-    border-top-color: rgb(38, 84, 154)
+    background: linear-gradient(rgba(0,0,0,0) 10%, var(--secondbg) 90%)
 }

@@ -69,7 +69,7 @@ body {
     margin-right: auto;
     margin-top: 6%;
     margin-bottom: 25%;
-    width: 60%;
+    width: 50%;
 
     padding-right: 30px;
     padding-left: 30px;
@@ -78,10 +78,40 @@ body {
     border-radius: 30px;
 }
 
+.multiSection { /* For displaying more than one section side-by-side. */
+    display: flex;
+}
+
+.wide {
+    width: 60%;
+}
+.thin {
+    width: 40%;
+}
 
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.details {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media(max-width: 1780px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 1200px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .project {

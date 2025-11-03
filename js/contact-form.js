@@ -9,8 +9,8 @@ const username = document.getElementById("user")
 //Error message outputs
 let errormsgs = Array.from(document.getElementsByClassName("error"));
 
-const contacterr = errormsgs[1];
-const usererr = errormsgs[2];
+const contacterr = errormsgs[0];
+const usererr = errormsgs[1];
 
  // -------------------------------------------------------------------- \\
 // ------------------------ REAL TIME VALIDATION ------------------------ \\

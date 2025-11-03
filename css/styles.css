@@ -4,6 +4,7 @@
     --secondaryBorder: rgb(118, 118, 235);
 
     --bg: rgb(182, 182, 249);
+    --bgtrans: rgba(212, 212, 235, 0.921);
     --secondbg: rgb(40, 40, 134);
     --secondbgtrans: rgba(40, 40, 134, 0.2);
 
@@ -20,6 +21,10 @@ body {
     background-image: url("/Web-Development/Portfolio/css/images/Houseboat\ night.png");
     background-size: cover;
     background-attachment: fixed;
+}
+
+p {
+    margin-bottom: 1%
 }
 
 header {
@@ -79,6 +84,7 @@ header {
 
     border: 5px solid var(--primaryBorder);
     border-radius: 30px;
+    box-shadow: 0 0 20px var(--secondaryBorder);
 }
 
 .multiSection { /* For displaying more than one section side-by-side. */
@@ -136,6 +142,8 @@ header {
 
     border: 3px solid var(--primaryBorder);
     border-radius: 30px;
+
+    box-shadow: 0 0 7px var(--primaryBorder);
 }
 
 .project:hover {
@@ -164,8 +172,100 @@ header {
     aspect-ratio: 1 / 1;
 }
 
-/* ---------------- PROJECT DETAILS ---------------- */
+/* ---------------- FORMS ---------------- */
 
+form {
+    font-size: 20px;
+}
+
+input {
+    width: 30%;
+    font-size: 17px;
+
+    border: 3px solid var(--primaryBorder);
+    border-radius: 10px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background-color: var(--bgtrans);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--secondaryBorder);
+}
+
+select {
+    width: fit-content;
+    font-size: 17px;
+
+    border: 3px solid var(--primaryBorder);
+    border-radius: 10px;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background-color: var(--bgtrans);
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--secondaryBorder);
+}
+
+#topic {
+    font-size: 25px;
+    width: 95%;
+}
+
+#message {
+    width: 95%;
+    font-size: 17px;
+
+    height: 200px;
+    text-align: left;
+    vertical-align: top;
+
+    border: 3px solid var(--primaryBorder);
+    border-radius: 10px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin-bottom: 5%;
+
+    background-color: var(--bgtrans);
+}
+
+#message:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--secondaryBorder);
+}
+
+#submit {
+    justify-self: center;
+    width: 15%;
+    height: 3%;
+    font-size: 17px;
+
+    border: 3px solid var(--primaryBorder);
+    border-radius: 10px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin-bottom: 2%;
+
+    background-color: var(--bgtrans);
+}
+
+#submit:hover {
+    box-shadow: 0 0 10px var(--secondaryBorder);
+}
+
+
+/* ---------------- FOOTER ---------------- */
 
 footer {
     text-align: center;

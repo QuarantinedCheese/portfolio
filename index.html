@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <script defer src="js/projects.js"></script>
+    <script d efer src="js/contact-form.js"></script>
 </head>
 <body>
     <nav>
@@ -21,7 +22,7 @@
 
 <!-- ABOUT -->
     <div class="section">
-        <h3>About me!</h1>
+        <h2>About me!</h2>
 
         <p>Hello! I am Cheese, currently an online Humber Polytechnic student, in my first year of the Computer Programming and Analysis program. I graduated from highschool, focusing on computer tech classes and advanced math. I have chosen to make this portfolio anonymous for now, because I highly value my online privacy.</p>
 
@@ -40,7 +41,7 @@
     <div class="multiSection">
 
         <div id="projectSection" class="section wide">
-            <h3>my projects!</h3>
+            <h2>my projects!</h2>
             <div class="projects">
                 <div class="project"> 
                     <div class="projectTitle">Test Project 1</div>
@@ -77,9 +78,29 @@
 
 <!-- CONTACTS -->
     <div class="section">
-        <h3>contact me!</h3>
+        <h2>contact me!</h2>
         <p>email: quarantinedcheese@gmail.com</p>
         <p>discord: quarantinedcheese</p>
+        <br>
+        <!-- Contact form -->
+        <form action="#" method="POST">
+            <h3>Contact Form:</h3>
+            <p>What should I call you?</p>
+            <input type="text" id="name" name="name" required>
+
+            <p>How can I contact you?</p>
+            <select name="contacts" id="contacts">
+                <option value="">--Please choose an option--</option>
+                <option value="email">Email</option>
+                <option value="discord">Discord</option>
+                <!-- <option value="other">Other</option> -->
+            </select>
+            <p>User:</p>
+            <input type="text" id="user" name="username" required>
+
+            <p>Message:</p>
+            <input type="text" id="message" name="message" required>
+        </form>
     </div>
 
     <footer>

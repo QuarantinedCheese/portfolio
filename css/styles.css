@@ -22,7 +22,7 @@ body {
     background-attachment: fixed;
 }
 
-.header {
+header {
     position: fixed;
     top: 0;
 
@@ -60,6 +60,8 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* ----------------------------------------- */
+/* ---------------- CONTENT ---------------- */
 
 .section {
     background-color: var(--secondbgtrans);
@@ -70,6 +72,7 @@ body {
     margin-top: 6%;
     margin-bottom: 25%;
     width: 50%;
+    height: fit-content;
 
     padding-right: 30px;
     padding-left: 30px;
@@ -80,6 +83,7 @@ body {
 
 .multiSection { /* For displaying more than one section side-by-side. */
     display: flex;
+    align-items: center;
 }
 
 .wide {
@@ -113,6 +117,8 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* ---------------- PROJECTS ---------------- */
 
 .project {
     /* Setup Grid so that 1 is title, 2 is desc, and 3 is image. */
@@ -155,11 +161,13 @@ body {
     
     background-image: url("/Web-Development/Portfolio/css/images/Project-Placeholder.png");
     background-size: cover;
-    aspect-ratio: 1/ 1;
+    aspect-ratio: 1 / 1;
 }
 
+/* ---------------- PROJECT DETAILS ---------------- */
 
-.footer {
+
+footer {
     text-align: center;
     font-size: 15px;
     color: rgb(38, 76, 166);

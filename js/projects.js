@@ -10,24 +10,49 @@ const projects = Array.from(document.querySelectorAll(".project"));
 
 projects.forEach((project) => project.addEventListener("click", function() {
     // Set variables
-    const multiSection = document.querySelector(".multiSection");
-    const projects = document.getElementById("projectSection")
+    const multiSection = document.querySelector(".multiSection"); // Master container
+    const projectSec = document.getElementById("projectSection") // Project container
+    const projects = document.querySelector(".projects");
 
-    //Step one: Open expanded details menu and restrict new menu opening.
+    let info = project.innerText.split("\n");
+
+    const title = info[0]
+    const summary = info[1]
+
+    //Step one: Open expanded details menu and delete old menu if it exists.
+    // If same button is pressed again, do not make a new div.
     const projDetails = document.createElement("div"); // Make div
-    if(Array.from(multiSection.children).length <= 1) { // Make sure no other panel exists
 
-        projDetails.classList.add("section"); // Style
-        projDetails.classList.add("thin");
+    let panels = Array.from(multiSection.children)
+    if(panels.length > 1) {
+        console.log(panels[1].innerText)
+        if(panels[1].innerText.split("\n")[0] == title) {
+            //Delete menu and reset classes.
+            projectSec.classList.add("wide");
+            projects.classList.remove("details");
+            panels[1].remove();
+            return
+        }
+        panels[1].remove(); // Delete menu
+    } 
 
-        multiSection.appendChild(projDetails); // Add
-    }
+    projDetails.classList.add("section"); // Style
+    projDetails.classList.add("thin");
 
-    //Step three: Remove wide class from projects and add thin.
-    projects.classList.remove("wide");
-    projects.classList.add("thin");
-    projects.classList.add("details")
+    multiSection.appendChild(projDetails); // Add
 
-    //Step two: Locate and Load important details
+
+    //Step two: Remove wide class from project section and add details to projects.
+    projectSec.classList.remove("wide");
+    projects.classList.add("details");
+
+    //Step three: Locate and Load important details
+    
+    // Fetch project details from elsewhere, then add after summary.
+    // Add button that when clicked, can send the user to another page for the project.
+    projDetails.innerHTML = `
+        <h3>${title}</h3>
+        <p>${summary}</p>
+    `
 
 }));

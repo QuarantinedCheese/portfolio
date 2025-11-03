@@ -178,8 +178,16 @@ form {
     font-size: 20px;
 }
 
+#formtext {
+    margin-top: 1%;
+}
+
+.error {
+    font-size: 13px;
+}
+
 input {
-    width: 30%;
+    width: 300px;
     font-size: 17px;
 
     border: 3px solid var(--primaryBorder);
@@ -233,7 +241,7 @@ select:focus {
     padding-left: 5px;
     padding-right: 5px;
 
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 
     background-color: var(--bgtrans);
 }
@@ -241,6 +249,11 @@ select:focus {
 #message:focus {
     outline: none;
     box-shadow: 0 0 10px var(--secondaryBorder);
+}
+
+#fineprint {
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 #submit {

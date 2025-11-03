@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <script defer src="js/projects.js"></script>
-    <script d efer src="js/contact-form.js"></script>
+    <script defer src="js/contact-form.js"></script>
 </head>
 <body>
     <nav>
@@ -83,27 +83,32 @@
         <p>discord: quarantinedcheese</p>
         <br>
         <!-- Contact form -->
-        <form action=" " method="POST">
+        <form action="" method="POST">
             <h3>Contact Form:</h3>
-            <p>What should I call you?</p>
+            <p id="formtext">What should I call you?</p>
             <input type="text" id="name" name="name" required>
+            <p class="error"><br></p>
 
-            <p>How can I contact you?</p>
+            <p id="formtext">How can I contact you?</p>
             <select name="contacts" id="contacts">
                 <option value="">--Please choose an option--</option>
                 <option value="email">Email</option>
                 <option value="discord">Discord</option>
                 <!-- <option value="other">Other</option> -->
             </select>
-            <p>User:</p>
-            <input type="text" id="user" name="username" required>
+            <p class="error"><br></p>
 
-            <p>Topic:</p>
+            <p id="formtext">User:</p>
+            <input type="text" id="user" name="username" required>
+            <p class="error"><br></p>
+
+            <p id="formtext">Topic:</p>
             <input type="text" id="topic" name="topic" required>
 
-            <p>Message:</p>
+            <p id="formtext">Message:</p>
             <textarea id="message" name="message" required></textarea>
 
+            <p id="fineprint">All fields must be filled.</p>
             <button type="submit" id="submit">Send Form</button>
         </form>
     </div>

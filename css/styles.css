@@ -167,7 +167,7 @@ header {
     border: 2px solid var(--secondaryBorder);
     border-radius: 10px;
     
-    background-image: url("/Web-Development/Portfolio/css/images/Project-Placeholder.png");
+    background-image: url("/Portfolio/css/images/Project-Placeholder.png");
     background-size: cover;
     aspect-ratio: 1 / 1;
 }
